@@ -65,49 +65,44 @@ body{
     line-height: 49px;
     color: #FFFFFF;
 }
-.about{
-    text-align: center;
-    padding: 133px 0 134px;
-}
-.about_text1{
-    max-width: 696px;
-    margin: 0 auto;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: #000000;
+.square{
     position: relative;
+    margin: 221px auto;
 }
-.about_text1::before{
-    content: '';
+.square_item{
     position: absolute;
     width: 178px;
     height: 121px;
-    background: #BFDEFB;
-    top: -40%;
-    left: -50%;
+    background-color: #BFDEFB;
 }
-.about_text1::after{
-    content: '';
-    position: absolute;
-    width: 178px;
-    height: 121px;
-    background: #BFDEFB;
-    bottom: 40%;
-    right: -50%;
+.square_item--1{
+    top: -121px;
+    left: 0;
 }
-.about_text2{
+.square_item--2{
+    bottom: -50px;
+    left: 0;
+}
+.square_item--3{
+    top: 20px;
+    right: 0;
+}
+.square_text{
     max-width: 696px;
     margin: 0 auto;
-    font-weight: 400;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    color: #000000;
+}
+.circle_text{
+    max-width: 696px;
+    margin: 216px auto;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
     position: relative;
 }
-.about_text2::before{
+.circle_text::before{
     content: '';
     position: absolute;
     width: 58px;
@@ -117,7 +112,7 @@ body{
     top: -20%;
     left: -20%;
 }
-.about_text2::after{
+.circle_text::after{
     content: '';
     position: absolute;
     width: 120px;
@@ -127,8 +122,6 @@ body{
     bottom: -20%;
     right: -20%; 
 }
-
-
 .form-section{
     max-width: 647px;
     margin: 133px 397px 729px 396px;
@@ -159,7 +152,6 @@ body{
     font-weight: 400;
     font-size: 36px;
     line-height: 49px;
-    color: #000000;
 }
 .form_button{
     width: 100%;
