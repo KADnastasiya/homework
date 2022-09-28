@@ -40,8 +40,8 @@
         </div>
     </header>
     <section class="inbox_description">
-        <div class="container flex">
-            <div class="description">
+        <div class="container flex flex_column">
+            <div class="description description-one">
                 <h6 class="description_title">
                     What is it about?
                 </h6>
@@ -60,17 +60,17 @@
         </div>
     </section>
     <section class="inbox_partner container">
-        <div class="partners_flex">
-                <img src="./img/section/new-york.png" alt="new-york">
-                <img src="./img/section/forbes.png" alt="forbes">
-                <img src="./img/section/apple.png" alt="apple">
-                <img src="./img/section/mashable.png" alt="mashable">
-                <img src="./img/section/wsl.png" alt="wsl">
-                <img src="./img/section/google.png" alt="google">
+        <div class="partners_grid">
+                <img class="partner" src="./img/section/new-york.png" alt="new-york">
+                <img class="partner" src="./img/section/forbes.png" alt="forbes">
+                <img class="partner" src="./img/section/apple.png" alt="apple">
+                <img class="partner" src="./img/section/mashable.png" alt="mashable">
+                <img class="partner" src="./img/section/wsl.png" alt="wsl">
+                <img class="partner" src="./img/section/google.png" alt="google">
         </div>
     </section>
     <section class="inbox">
-        <div class="container flex">
+        <div class="container flex flex_inbox-column">
             <div class="container-image">
                 <img class="container-image_img" src="./img/inbox/ouch.svg" alt="ouch">
             </div>
@@ -104,15 +104,15 @@
         </div>
     </section>
     <section class="inbox_communication">
-        <div class="container flex">
+        <div class="container flex flex_column">
             <div class="info">
                 <p class="info_pretitle info_pretitle-blue">
                     Communicate Better
                 </p>
-                <h3 class="info_title">
+                <h3 class="info_title info_title-communication">
                     Built for busy small teams
                 </h3>
-                <p class="info_text">
+                <p class="info_text info_text-communication">
                     Three products that can be used independently or combined together for your company’s needs.
                 </p>
                 <button class="button">
@@ -123,7 +123,7 @@
                 <img class="container-image_img" src="./img/inbox2/phone.png" alt="phone">
             </div>
         </div>
-        <div class="container flex flex_opportunities">
+        <div class="container flex flex_opportunities flex_column">
             <div class="info_oppotrunities">
             <p class="info_oppotrunities-about">
                 <span class="inbox_text-bold">Subscriptions.</span> Foundation works with the tools and services you already use every day.  
@@ -132,7 +132,7 @@
                 Learn more about subscriptions
             </a>
             </div>
-            <div>
+            <div class="info_oppotrunities-1">
             <p class="info_oppotrunities-about">
                 <span class="inbox_text-bold">Felxible Hours.</span> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
             </p>
@@ -140,7 +140,7 @@
                 Get more info about hours
             </a>
             </div>
-            <div>
+            <div class="info_oppotrunities-2">
             <p class="info_oppotrunities-about">
                 <span class="inbox_text-bold">Fast Communication.</span> We offer measures like 2FA and SSO to ensure the safety of your data.
             </p>
@@ -163,7 +163,7 @@
                 </p>
             </div>
             <div class="engage_button">
-                <button class="button">
+                <button class="button button_blue">
                     Get Started
                 </button>
                 <button class="button-white">
@@ -200,6 +200,16 @@
             </div>
         </div>
     </section>
+    <section class="inbox_partner container">
+        <div class="partners_grid">
+                <img class="partner" src="./img/section/new-york.png" alt="new-york">
+                <img class="partner" src="./img/section/forbes.png" alt="forbes">
+                <img class="partner" src="./img/section/apple.png" alt="apple">
+                <img class="partner" src="./img/section/mashable.png" alt="mashable">
+                <img class="partner" src="./img/section/wsl.png" alt="wsl">
+                <img class="partner" src="./img/section/google.png" alt="google">
+        </div>
+    </section>
     <section class="inbox_surface">
         <div class="container">
             <div>
@@ -223,5 +233,38 @@
             </div>
         </div>
     </section>
+    <section class="inbox_trial">
+        <div class="container flex flex_trial-column">
+            <div class="trial_image container-image_img">
+                <img src="./img/section.trial/trial.png" alt="trial">
+            </div>
+            <div class="trial_info">
+                <h3 class="trial_title">
+                    Start your free trial.
+                </h3>
+                <p class="trial_text">
+                    Get notified about company updates, news and blog posts. We hate spam.
+                </p>
+                <div class="trial_form-section">
+                    <form class="flex flex_trial-button">
+                        <div>
+                            <input class="input" id="email" placeholder="Enter your email" type="email">
+                        </div>
+                        <button class="button button-trial">
+                            Get Started
+                        </button>
+                    </form>
+                </div>
+                <div class="trial_proposition">
+                    <label>
+                        <input class="checkbox" type="checkbox">
+                        <span class="fake"></span>
+                        <span class="trial_proposition-text">Free 14-day trial · Easy setup · Cancel any time. Check out <a class="trial_terms" href="#">Terms of Use.</a></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body> 
 </html>
