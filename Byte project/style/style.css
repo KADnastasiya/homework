@@ -31,6 +31,11 @@ body{
     justify-content: space-around;
 }
 
+.flex_footer{
+    justify-content: start;
+}
+
+
 .logo img{
     margin-right: 15px;
 }
@@ -46,6 +51,21 @@ body{
     font-size: 18px;
     line-height: 25px;
     color: rgba(43, 41, 45, 0.6);
+}
+
+.check{
+    width: 18px;
+    height: 2.17px;
+    background: #2C3241;
+    opacity: 0.6;
+}
+
+.check:not(last-ot-type){
+    margin-bottom: 3.25px;
+}
+
+.checkbox-menu, .check-wrapper{
+    display: none;
 }
 
 .header_link{
@@ -97,6 +117,44 @@ body{
     cursor: pointer;
     transition: 1s;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #1127ed;
+}
+
+.main{
+    background-color: rgba(243, 198, 189, 1);
+    position: relative;
+    padding-bottom: 126px;
+}
+
+.main_container > .div:first-of-type{
+    z-index: 1;
+}
+
+.main_container > .div:last-of-type{
+    z-index: 0;
+    position: absolute;
+    right: 25px;
+}
+
+.main_title{
+    max-width: 754px;
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    color: #2B292D;
+}
+
+.main_text{
+    max-width: 456px;
+    margin-bottom: 58px;
+    font-size: 24px;
+    line-height: 34px;
+    color: #2B292D;
+}
+
+.social{
+    padding-bottom: 51px;
 }
 
 .inbox{
@@ -494,6 +552,7 @@ body{
     margin: 0 10px;
     padding: 17px 0 18px 15px;
     box-sizing: border-box;
+    font-family: 'Work Sans';
 }
 
 .input::placeholder{
@@ -558,6 +617,91 @@ body{
     color: rgba(49, 66, 198, 1);
 }
 
+.footer{
+    padding: 91px 0 47px;
+    position: relative;
+}
+
+.logo-footer{
+    margin: 43px 0 26px;
+}
+
+.footer_text{
+    max-width: 360px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.footer_image{
+    margin-bottom: 51px;
+}
+
+.footer_image-apple{
+    margin-right: 10px;
+}
+
+.footer_suggest{
+    width: 559px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.footer_suggest-1{
+    width: 265px;
+}
+
+.suggest_title{
+    max-width: 212px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B292D;
+    margin-bottom: 18px;
+}
+
+.suggest_text{
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.footer::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #2B292D;
+    position: absolute;
+    opacity: 10%;
+}
+
+.social_ul{
+    max-width: 180px;
+}
+
+.social_li-1, .social_li-2{
+    margin-right: 15px;
+}
+
+.social_li-1, .social_li-2, .social_li-3{
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.social_icon{
+    width: 97px;
+    height: 18px;
+}
+
+.social_icon-pic1, .social_icon-pic2{
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+}
 
 @media screen and (max-width:1200px){
     .container{
@@ -600,6 +744,90 @@ body{
 
     .flex_trial-column{
         flex-direction: column-reverse;
+    }
+
+    .flex_menu{
+        flex-direction: column;
+    }
+
+    .checkbox-menu, .check-wrapper{
+        display: block;
+    }
+
+    .menu{
+        position: relative;
+    }
+
+    .check{
+        transition: 300ms;
+    }
+
+    .checkbox-menu{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        top: -2px;
+        right: 0;
+        opacity: 0;
+        z-index: 4;
+    }
+
+    .check-wrapper{
+        position: relative;
+        z-index: 3;
+    }
+
+    .checkbox-menu:checked ~ .check-wrapper > .check:first-of-type{
+        transform: rotate(45deg) translate(8px, 6px);
+    }
+
+    .checkbox-menu:checked ~ .check-wrapper > .check:nth-of-type(2){
+        opacity: 0;
+    }
+
+    .checkbox-menu:checked ~ .check-wrapper > .check:last-of-type{
+        transform: rotate(-45deg) translate(2px, 1px);
+    }
+
+    .checkbox-menu:checked ~ .header_nav{
+        display: block;
+        position: fixed;
+        background-color:rgba(48, 64, 196, 0.5);
+        top: 65px;
+        left: 670px;
+        right: 100px;
+        bottom: 370px;
+        text-align: center;
+        border-radius: 5px;
+        z-index: 2;
+    }
+    
+    .header_li:first-of-type{
+        margin: 23px 83px;
+    }
+
+    li{
+        margin-bottom: 20px;
+    }
+
+    .check{
+        width: 18px;
+        height: 2.17px;
+        background: #2C3241;
+        opacity: 0.6;
+    }
+    
+    .check:not(last-ot-type){
+        margin-bottom: 3.25px;
+    }
+
+    .main_container{
+        flex-direction: column;
+    }
+    
+    .main_container > .div:last-of-type{
+        position: static;
     }
 
     .inbox{
