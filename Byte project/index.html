@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/carusel.css">
 </head>
 <body>
     <header class="header">
@@ -34,7 +36,7 @@
                     <nav class="header_nav flex">
                         <ul class="header_ul flex flex_menu">
                             <li class="header_li">
-                                <a class="header_link" href="#">Home</a>
+                                <a class="header_link" id="about-link" href="#">Home</a>
                             </li>
                             <li class="header_li">
                                 <a class="header_link" href="#">Stories</a>
@@ -60,7 +62,7 @@
                     <button class="button">
                         Get Started
                     </button>
-                    <button class="button-white">
+                    <button id="open-modal" class="button-white">
                         Learn More
                     </button>
                 </div>
@@ -98,6 +100,58 @@
                 <img class="partner" src="./img/section/mashable.png" alt="mashable">
                 <img class="partner" src="./img/section/wsl.png" alt="wsl">
                 <img class="partner" src="./img/section/google.png" alt="google">
+        </div>
+    </section>
+    <section class="features">
+        <img class="features_img-1" src="./img/features/eye.svg" alt="eye">
+        <img class="features_img-2" src="./img/features/Invision Screen.png" alt="invivsionscreen">
+        <div class="container">
+            <div class="features_info">
+                <p class="features_pretitle">
+                    Features
+                </p>
+                <h3 class="features_title">
+                    Easily find leads and customers
+                </h3>
+                <p class="features_text">
+                    Send one-off and automated email, push, and in-app messages to people. Create better stories.
+                </p>
+            </div>
+            <div>
+                <div class="proposition">
+                    <div class="flex flex_features">
+                        <img class="feature-img" src="./img/features/icon1.svg" alt="icon1">
+                        <p class="proposition-pretitle ">
+                            Acquire new customers
+                        </p>
+                    </div>
+                    <p class="proposition-text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <div class="proposition">
+                    <div class="flex flex_features">
+                        <img class="feature-img" src="./img/features/icon2.svg" alt="icon2">
+                        <p class="proposition-pretitle">
+                            Engage users
+                        </p>
+                    </div>
+                    <p class="proposition-text">
+                        Lorem, ipsum dolor.
+                    </p>
+                </div>
+                <div class="proposition">
+                    <div class="flex flex_features">
+                        <img class="feature-img" src="./img/features/icon3.svg" alt="icon3">
+                        <p class="proposition-pretitle">
+                            Develop across platforms
+                        </p>
+                    </div>
+                    <p class="proposition-text">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="inbox">
@@ -239,6 +293,109 @@
                 <img class="partner" src="./img/section/mashable.png" alt="mashable">
                 <img class="partner" src="./img/section/wsl.png" alt="wsl">
                 <img class="partner" src="./img/section/google.png" alt="google">
+        </div>
+    </section>
+    <section class="container container_carusel">
+        <div class="carusel">
+            <div>
+                <h3 class="carusel_title">
+                    Trusted by the world’s most innovative businesses – big and small
+                </h3>
+                <p class="carusel_text">
+                    “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                </p>
+                <p class="carusel_name">
+                    Viella Malkovich
+                </p>
+                <p class="carusel_position">
+                    Creative Director at Johnson
+                </p>
+            </div>
+            <div>
+                <h3 class="carusel_title">
+                    Lorem ipsum dolor sit amet consectetur.
+                </h3>
+                <p class="carusel_text">
+                    “Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eaque dolor, dolores ducimus sint animi.”
+                </p>
+                <p class="carusel_name">
+                   Laura Hops
+                </p>
+                <p class="carusel_position">
+                   Manager
+                </p>
+            </div>
+            <div>
+                <h3 class="carusel_title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p class="carusel_text">
+                    “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis.”
+                </p>
+                <p class="carusel_name">
+                   Michel Nikson
+                </p>
+                <p class="carusel_position">
+                   HR
+                </p>
+            </div>
+        </div>
+        <div>
+            <img class="carusel_img" src="./img/container/ouch.png" alt="ouch">
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h3 class="about_title">
+                We’re hiring
+            </h3>
+            <p class="about_text">
+                We’re a team of lifelong learners. We’re equal parts left and right brained.
+            </p>
+            <button class="button button-about">
+                More about Company
+            </button>
+        </div>
+        <div>
+            <div class="about-items">
+                <div class="flex">
+                    <p class="about-pretitle">
+                        Front-End Developer
+                    </p>
+                    <p class="about-icon about-rotate-icon">
+                        >
+                    </p>
+                </div>
+                <p class="about-text">
+                    Everything you need to start building – including open-source code, documentation.
+                </p>
+            </div>
+            <div class="about-items">
+                <div class="flex">
+                    <p class="about-pretitle">
+                        Community Manager
+                    </p>
+                    <p class="about-icon about-rotate-icon">
+                        >
+                    </p>
+                </div>
+                <p class="about-text">
+                    Lorem, ipsum dolor.
+                </p>
+            </div>
+            <div class="about-items">
+                <div class="flex">
+                    <p class="about-pretitle">
+                        UX/UI Designer
+                    </p>
+                    <p class="about-icon about-rotate-icon">
+                        >
+                    </p>
+                </div>
+                <p class="about-text">
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
         </div>
     </section>
     <section class="inbox_surface">
@@ -389,5 +546,24 @@
              </div>
         </section>
     </footer>
+     <div class="modal-overlay">
+        <div class="modal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti cupiditate dolores saepe nemo ad labore unde explicabo possimus ullam.</p>
+            <p class="close">
+                X
+            </p>
+        </div>
+     </div>
+     <div id="up">
+        <span class="up">
+            >
+        </span>
+     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="./script/bxslider.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
+    <script src="./script/upButton.js"></script>
 </body> 
 </html>
