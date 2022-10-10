@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/carusel.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container flex">
+            <div class="logo flex">
+                <img src="./img/header/logo.svg" alt="logo">
+                <div>
+                    <h6 class="logo_title">
+                        Foundation
+                    </h6>
+                    <p class="logo_text">
+                        Startup landing template
+                    </p>
+                </div>
+            </div>
+            <div class="menu">
+                <input type="checkbox" class="checkbox-menu">
+                <div class="check-wrapper">
+                    <div class="check"></div>
+                    <div class="check"></div>
+                    <div class="check"></div>
+                </div>
+                    <nav class="header_nav flex">
+                        <ul class="header_ul flex flex_menu">
+                            <li class="header_li">
+                                <a class="header_link" id="about-link" href="#">Home</a>
+                            </li>
+                            <li class="header_li">
+                                <a class="header_link" href="#">Stories</a>
+                            </li>
+                        </ul>
+                        <button class="button header-button">
+                            Get Started
+                        </button>
+                    </nav>
+            </div>       
+        </div>
+    </header>
+    <section class="main">
+        <div class="container flex main_container">
+            <div class="main_content">
+                <h1 class="main_title">
+                    Build stunning websites & apps.
+                </h1>
+                <p class="main_text">
+                    Create live segments and target the right people for messages based on their behaviors.
+                </p>
+                <div>
+                    <button class="button button-main">
+                        Get Started
+                    </button>
+                    <button id="open-modal" class="button-white button-white-main">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img class="main_img" src="./img/main/main.png" alt="main">
+            </div>
+        </div>
+    </section>
+    <section class="inbox_description">
+        <div class="container flex flex_column">
+            <div class="description description-one">
+                <h6 class="description_title">
+                    What is it about?
+                </h6>
+                 <p class="description_text">
+                    Building a website for a startup that looks amazing is not a rocket science anymore.
+                </p>
+            </div>
+            <div class="description">
+                <h6 class="description_title">
+                    Who is it for?
+                </h6>
+                <p class="description_text">
+                    Startups, small companies and teams, entrepreneurs and web developers.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="inbox_partner container">
+        <div class="partners_grid">
+                <img class="partner" src="./img/section/new-york.png" alt="new-york">
+                <img class="partner" src="./img/section/forbes.png" alt="forbes">
+                <img class="partner" src="./img/section/apple.png" alt="apple">
+                <img class="partner" src="./img/section/mashable.png" alt="mashable">
+                <img class="partner" src="./img/section/wsl.png" alt="wsl">
+                <img class="partner" src="./img/section/google.png" alt="google">
+        </div>
+    </section>
+    <section class="features">
+        <div class="container features_content">
+            <div class="features_info">
+                <p class="features_pretitle">
+                    Features
+                </p>
+                <h3 class="features_title">
+                    Easily find leads and customers
+                </h3>
+                <p class="features_text">
+                    Send one-off and automated email, push, and in-app messages to people. Create better stories.
+                </p>
+            </div>
+            <div class="features_proposition">
+                <div class="proposition">
+                    <div class="flex flex_features">
+                        <img class="feature-img" src="./img/features/icon1.svg" alt="icon1">
+                        <p class="proposition-pretitle ">
+                            Acquire new customers
+                        </p>
+                    </div>
+                    <p class="proposition-text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <div class="proposition">
+                    <div class="flex flex_features">
+                        <img class="feature-img" src="./img/features/icon2.svg" alt="icon2">
+                        <p class="proposition-pretitle">
+                            Engage users
+                        </p>
+                    </div>
+                    <p class="proposition-text">
+                        Lorem, ipsum dolor.
+                    </p>
+                </div>
+                <div class="proposition">
+                    <div class="flex flex_features">
+                        <img class="feature-img" src="./img/features/icon3.svg" alt="icon3">
+                        <p class="proposition-pretitle">
+                            Develop across platforms
+                        </p>
+                    </div>
+                    <p class="proposition-text">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img class="features_img-1" src="./img/features/eye.svg" alt="eye">
+        <img class="features_img-2" src="./img/features/Invision Screen.png" alt="invivsionscreen">
+    </section>
+    <section class="inbox">
+        <div class="container flex flex_inbox-column">
+            <div class="container-image">
+                <img class="container-image_img" src="./img/inbox/ouch.svg" alt="ouch">
+            </div>
+            <div class="info">
+                <p class="info_pretitle info_pretitle-orange">
+                    Team Inbox
+                </p>
+                <h3 class="info_title">
+                    Manage conversations
+                </h3>
+                <p class="info_text">
+                    One place to manage and respond to all conversations with leads and users. Receive messages from leads.
+                </p>
+                <div class="inbox_response">
+                    <p class="inbox_text">
+                        “Great widgets. Great selection. Great design and <span class="inbox_text-bold">easy to implement.</span> Definitely a huge time saver for a web developer!”
+                    </p>
+                    <div class="flex flex_start">
+                        <img class="inbox_img" src="./img/inbox/person.svg" alt="person"> 
+                    <div>
+                        <p class="inbox_name">
+                            Viella Malkovich
+                        </p>
+                        <p class="inbox_position">
+                            Creative Director at Johnson
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inbox_communication">
+        <div class="container flex flex_column">
+            <div class="info">
+                <p class="info_pretitle info_pretitle-blue">
+                    Communicate Better
+                </p>
+                <h3 class="info_title info_title-communication">
+                    Built for busy small teams
+                </h3>
+                <p class="info_text info_text-communication">
+                    Three products that can be used independently or combined together for your company’s needs.
+                </p>
+                <button class="button">
+                    Get Started
+                </button>
+            </div>
+            <div class="container-image">
+                <img class="container-image_img" src="./img/inbox2/phone.png" alt="phone">
+            </div>
+        </div>
+        <div class="container flex flex_opportunities flex_column">
+            <div class="info_oppotrunities">
+            <p class="info_oppotrunities-about">
+                <span class="inbox_text-bold">Subscriptions.</span> Foundation works with the tools and services you already use every day.  
+            </p>
+            <a class="info_oppotrunities-text">
+                Learn more about subscriptions
+            </a>
+            </div>
+            <div class="info_oppotrunities-1">
+            <p class="info_oppotrunities-about">
+                <span class="inbox_text-bold">Felxible Hours.</span> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
+            </p>
+            <a class="info_oppotrunities-text">
+                Get more info about hours
+            </a>
+            </div>
+            <div class="info_oppotrunities-2">
+            <p class="info_oppotrunities-about">
+                <span class="inbox_text-bold">Fast Communication.</span> We offer measures like 2FA and SSO to ensure the safety of your data.
+            </p>
+            <a class="info_oppotrunities-text">
+                Communication guidelines
+            </a>
+            </div>
+    </section>
+    <section class="inbox_engage">
+        <div class="container">
+            <div class="engage_about">
+                <h5 class="engage_pretitle">
+                    Engage Visitors
+                </h5>
+                <h6 class="engage_title">
+                    Understand your audience
+                </h6>
+                <p class="engage_text">
+                    Early stage company? Eligible applicants get all of our products for just $49 a month.
+                </p>
+            </div>
+            <div class="engage_button">
+                <button class="button button_blue">
+                    Get Started
+                </button>
+                <button class="button-white">
+                    Learn More
+                </button>
+            </div>
+            <div class="categories">
+                <div class="grid">
+                    <div class="categories_item">
+                        <img class="categories_item-1" src="./img/section.categories/developers.png" alt="developers">
+                        <p class="categories_text">
+                            Developers
+                        </p>
+                    </div>
+                    <div class="categories_item">
+                        <img class="categories_item-2" src="./img/section.categories/entertainment.png" alt="entertainment">
+                        <p class="categories_text">
+                            Entertainment
+                        </p>
+                    </div>
+                    <div class="categories_item">
+                        <img class="categories_item-3" src="./img/section.categories/athletes.png" alt="athletes">
+                        <p class="categories_text">
+                            Athletes
+                        </p>
+                    </div>
+                    <div class="categories_item">
+                        <img class="categories_item-4" src="./img/section.categories/creators.png" alt="creators">
+                        <p class="categories_text">
+                            Creators
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inbox_partner container">
+        <div class="partners_grid">
+                <img class="partner" src="./img/section/new-york.png" alt="new-york">
+                <img class="partner" src="./img/section/forbes.png" alt="forbes">
+                <img class="partner" src="./img/section/apple.png" alt="apple">
+                <img class="partner" src="./img/section/mashable.png" alt="mashable">
+                <img class="partner" src="./img/section/wsl.png" alt="wsl">
+                <img class="partner" src="./img/section/google.png" alt="google">
+        </div>
+    </section>
+    <section class="slider">
+        <section class="container">
+            <div class="carusel">
+                <div>
+                    <h3 class="carusel_title">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </h3>
+                    <p class="carusel_text">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <p class="carusel_name">
+                        Viella Malkovich
+                    </p>
+                    <p class="carusel_position">
+                        Creative Director at Johnson
+                    </p>
+                </div>
+                <div>
+                    <h3 class="carusel_title">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, mollitia?
+                    </h3>
+                    <p class="carusel_text">
+                        “Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vel necessitatibus et consequatur dolores fugiat temporibus totam, nobis earum mollitia, rerum explicabo dolor magnam beatae?”
+                    </p>
+                    <p class="carusel_name">
+                    Laura Hops
+                    </p>
+                    <p class="carusel_position">
+                    Manager
+                    </p>
+                </div>
+                <div>
+                    <h3 class="carusel_title">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione neque velit magnam ullam repellendus officiis, illum illo.
+                    </h3>
+                    <p class="carusel_text">
+                        “Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nulla quaerat ipsa, consectetur architecto eos vel soluta quis non dolore quasi eum reiciendis doloremque!”
+                    </p>
+                    <p class="carusel_name">
+                    Michel Nikson
+                    </p>
+                    <p class="carusel_position">
+                    HR
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img class="carusel_img" src="./img/container/ouch.png" alt="ouch">
+            </div>
+        </section>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h3 class="about_title">
+                We’re hiring
+            </h3>
+            <p class="about_text">
+                We’re a team of lifelong learners. We’re equal parts left and right brained.
+            </p>
+            <button class="button button-about">
+                More about Company
+            </button>
+        </div>
+        <div>
+            <div class="about-items">
+                <div class="flex flex_about">
+                    <p class="about-pretitle">
+                        Front-End Developer
+                    </p>
+                    <p class="about_pretitle-1">
+                        Los Angeles / Remote
+                    </p>
+                    <p class="about-icon about-rotate-icon">
+                        >
+                    </p>
+                </div>
+                <p class="about-text">
+                    Everything you need to start building – including open-source code, documentation.
+                </p>
+            </div>
+            <div class="about-items">
+                <div class="flex">
+                    <p class="about-pretitle">
+                        Community Manager
+                    </p>
+                    <p class="about_pretitle-1">
+                        New York / Full-Time
+                    </p>
+                    <p class="about-icon about-rotate-icon">
+                        >
+                    </p>
+                </div>
+                <p class="about-text">
+                    Lorem, ipsum dolor.
+                </p>
+            </div>
+            <div class="about-items">
+                <div class="flex">
+                    <p class="about-pretitle">
+                        UX/UI Designer
+                    </p>
+                    <p class="about_pretitle-1">
+                        New York / Full-Time
+                    </p>
+                    <p class="about-icon about-rotate-icon">
+                        >
+                    </p>
+                </div>
+                <p class="about-text">
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="inbox_surface">
+        <div class="container">
+            <div>
+                <h6 class="surface_title">
+                    All Surfaces Covered
+                </h6>
+                <p class="surface_text">
+                    IOON kills bacteria on your hands, food, tables, laptops, you name it
+                </p>
+            </div>
+            <div class="surface_pics">
+                <div class="surface_grid">
+                    <img class="item" src="./img/surface.pics/surface.pic1.png" alt="surface.pic1">
+                    <img class="item" src="./img/surface.pics/surface.pic2.png" alt="surface.pic2">
+                    <img class="item" src="./img/surface.pics/surface.pic3.png" alt="surface.pic3">
+                    <img class="item" src="./img/surface.pics/surface.pic4.png" alt="surface.pic4">
+                    <img class="item" src="./img/surface.pics/surface.pic5.png" alt="surface.pic5">
+                    <img class="item" src="./img/surface.pics/surface.pic6.png" alt="surface.pic6">
+                    <img class="item" src="./img/surface.pics/surface.pic7.png" alt="surface.pic7">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inbox_trial">
+        <div class="container flex flex_trial-column">
+            <div class="trial_image container-image_img">
+                <img src="./img/section.trial/trial.png" alt="trial">
+            </div>
+            <div class="trial_info">
+                <h3 class="trial_title">
+                    Start your free trial.
+                </h3>
+                <p class="trial_text">
+                    Get notified about company updates, news and blog posts. We hate spam.
+                </p>
+                <div class="trial_form-section">
+                    <form class="flex flex_trial-button">
+                        <div>
+                            <input class="input" id="email" placeholder="Enter your email" type="email">
+                        </div>
+                        <button class="button button-trial">
+                            Get Started
+                        </button>
+                    </form>
+                </div>
+                <div class="trial_proposition">
+                    <label>
+                        <input class="checkbox" type="checkbox">
+                        <span class="fake"></span>
+                        <span class="trial_proposition-text">Free 14-day trial · Easy setup · Cancel any time. Check out <a class="trial_terms" href="#">Terms of Use.</a></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footer">
+        <div class="container flex flex-footer">
+            <div class="footer_content">
+                <div class="logo-footer flex flex_footer">
+                    <img src="./img/footer/logo.svg" alt="logo">
+                    <div>
+                        <h6 class="logo_title footer-logo_title">
+                            Foundation
+                        </h6>
+                        <p class="logo_text footer-logo_text">
+                            Startup landing template
+                        </p>
+                    </div>
+                </div>
+                <p class="footer_text">
+                    Foundation is a website template for startups and small teams. It helps to build a website in no time.
+                </p>
+                <div class="footer_image">
+                   <img class="footer_image-apple" src="./img/footer/AppStore.png" alt="appstore">
+                   <img class="footer_imege-google" src="./img/footer/Google Play.png" alt="googleplay">
+                </div>
+            </div>
+            <div class="footer_suggest flex flex-footer">
+                 <ul class="footer_suggest-1">
+                    <h3 class="suggest_title">
+                        Product
+                    </h3>
+                    <li class="suggest_text">
+                        Acquire Users
+                    </li>
+                    <li class="suggest_text">
+                        Content Marketing
+                    </li>
+                    <li class="suggest_text">
+                        Website Templates
+                    </li>
+                    <li class="suggest_text">
+                        Customer Management
+                    </li>
+                    <li class="suggest_text">
+                        Virtual Inbox
+                    </li>
+                </ul>
+                <ul class="footer_suggest-1">
+                    <h3 class="suggest_title suggest_title-2">
+                       Company
+                    </h3>
+                    <li class="suggest_text">
+                        About Foundation
+                    </li>
+                    <li class="suggest_text">
+                        Brand Guidelines
+                    </li>
+                    <li class="suggest_text">
+                        Press Kit
+                    </li>
+                    <li class="suggest_text">
+                        Support
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+        <section class="social">
+            <div class="container flex flex-social">
+                <nav class="social_nav">
+                    <ul class="social_ul flex">
+                        <li class="social_li-1">
+                            Terms
+                        </li>
+                        <li class="social_li-2">
+                            Privacy
+                        </li>
+                        <li class="social_li-3">
+                            License
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social_icon flex">
+                    <a href="#" class="social_icon-pic1">
+                        <img src="./img/footer/icon-twitter.png" alt="twitter">
+                    </a>
+                    <a href="#" class="social_icon-pic2">
+                        <img src="./img/footer/icon-fb.png" alt="facebook">
+                    </a>
+                    <a href="#" class="social_icon-pic3">
+                       <img src="./img/footer/LinkedIn.png" alt="linkedin">
+                    </a>
+                </div>
+             </div>
+        </section>
+    </footer>
+     <div class="modal-overlay">
+        <div class="modal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti cupiditate dolores saepe nemo ad labore unde explicabo possimus ullam.</p>
+            <p class="close">
+                X
+            </p>
+        </div>
+     </div>
+     <div id="up">
+        <span class="up">
+            >
+        </span>
+     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="./script/bxslider.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
+    <script src="./script/upButton.js"></script>
+</body> 
+</html>
