@@ -1,0 +1,148 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 13px 0 30px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo{
+    font-family: 'pacifico';
+    max-width: 109px;
+    font-size: 33px;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+
+.header_nav{
+    max-width: 455px;
+    padding-top: 13px;
+}
+
+.header_link{
+    font-family: 'poppins';
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: rgba(108, 108, 108, 1);
+}
+
+.header_link:hover{
+    color: rgba(172, 19, 19, 1);
+    transition: 300ms;
+}
+
+.header_ul::after{
+    content: '';
+    height: 38px;
+    width: 1px;
+    background: rgba(235, 235, 235, 1);
+    margin-right: 15px;
+}
+
+.cart_logo{
+    text-decoration: none;
+}
+
+.cart_text{
+    font-family: 'Libre Franklin';
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 5px;
+}
+
+.unique{
+    position: relative;
+}
+
+.unique_bcg{
+    position: absolute;
+    z-index: 0;
+}
+
+.unique_info{
+    position: absolute;
+    z-index: 1;
+    max-width: 576px;
+    margin: 191px 786px 211px 144px;
+}
+
+.unique_img{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    max-width: 784;
+    margin: 127px 33px 136px 623px;
+}
+
+.unique_pretitle{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:rgba(215, 116, 116, 1);
+    margin-bottom: 12px;
+}
+
+.unique_title{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 14px;
+}
+
+.unique_title-1{
+    display: inline-block;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 68px;
+    color: rgba(172, 19, 19, 1);
+}
+
+.unique_text{
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(108, 108, 108, 1);
+    margin-bottom: 51px;
+}
+
+.unique_button{
+    width: 201px;
+    height: 62px;
+    background: rgba(172, 19, 19, 1);
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+
+.categories{
+    position: relative;
+}
+ 
+.categories_content{
+    position: absolute;
+}
